@@ -16,6 +16,7 @@ const selectedCards = () => {
   });
 };
 
+// Função para mostrar as cartas selecionadas
 const statePageResult = () => {
   buttonResult.style.display = "none";
   filterContainer.style.display = "none";
@@ -28,6 +29,7 @@ const statePageResult = () => {
   alert.style.display = "none";
 };
 
+// Função para selecionar as cartas
 const statePageSelect = () => {
   buttonResult.style.display = "block";
   titlePage.innerText = "Select cards";
@@ -96,11 +98,11 @@ const templateListLink = (list) => {
 const insertCardsIntoPage = (template) => {
   const cards = document.querySelector(".cards");
   cards.innerHTML = template;
-  // adiciona funcionalidade de selecionar os cards
+  // Adiciona funcionalidade de selecionar os cards
   selectedCards();
 };
 
-
+// Função para a criação de cada um dos cards 
 const createCards = (infos) => {
   const template = infos.reduce((accumulator, actual) => {
     return (accumulator += `
@@ -139,7 +141,6 @@ const createCards = (infos) => {
           : ""
       }
     </p>
-
     </div>
   </article>
     `);
@@ -152,6 +153,7 @@ buttonResult.addEventListener("click", () => {
   const selectedCards = document.querySelectorAll(".active");
   const cards = document.querySelector(".cards");
 
+  // Definir o mínimo de cartas a ser selecionado pelo guia
   if (selectedCards.length >= 2) {
     cards.innerHTML = "";
     selectedCards.forEach((card) => {
