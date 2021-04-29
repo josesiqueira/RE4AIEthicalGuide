@@ -27,7 +27,7 @@
     <!-- Cards -->
     <main>
       <div class="container__game container">
-        <h1 id="game__title">Select cards</h1>
+        <h1 id="game__title">Select multiple cards</h1>
       </div>
       <section class="container__options container">
         <div class="container__filters">
@@ -42,21 +42,33 @@
             <option value="Agency & Oversight">Agency & Oversight</option>
             <option value="Wellbeing">Wellbeing</option>
             <option value="Accountability">Accountability</option>
+            
+            <option value="Transparency">Transparency</option>
+            <option value="Justice and fairness">Justice and fairness</option>
+            <option value="Non-maleficence">Non-maleficence</option>
+            <option value="Responsibility">Responsibility</option>
+            <option value="Privacy">Privacy</option>
+            <option value="Beneficence">Beneficence</option>
+            <option value="Freedom and autonomy">Freedom and autonomy</option>
+            <option value="Trust">Trust</option>
+            <option value="Sustainability">Sustainability</option>
+            <option value="Dignity">Dignity</option>
+            <option value="Solidarity">Solidarity</option>
           </select>
         </div>
         <div>
-          <button id="result" class="btn__compare">compare cards</button>
-          <button id="start" class="btn__start">start again</button>
+          <button id="result" class="btn__compare">Compare cards</button>
+          <button id="start" class="btn__start">Refresh</button>
         </div>
       </section>
     
 
       <section class="container">
         <div class="container__alert">
-          <!-- alerta quando a pessoa não seleciona pelo menos dois cards -->
-          <p class="alert">select at least two cards</p>
+          <!-- Alert when user does not select at least two cards -->
+          <p class="alert">Select at least two cards</p>
         </div>
-        <!-- onde é criado os cards -->
+        <!-- Where cards are created -->
         <div class="cards"></div>
       </section>
     </main>
