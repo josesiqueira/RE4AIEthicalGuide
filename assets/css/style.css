@@ -303,3 +303,9 @@ li {
     max-width: 230px;
   }
 }
+
+.bloco__codigo{
+ background: gray;
+ width: 300px;
+ height: 300px;
+}
