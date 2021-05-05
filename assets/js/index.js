@@ -125,7 +125,7 @@ const createCards = (infos) => {
       <br>
       <p>
         ${
-          actual.praticalExample
+          actual.exposition
             ? `<span class="strong">Exposition:</span> ${actual.exposition} `
             : ""
         }
@@ -133,7 +133,7 @@ const createCards = (infos) => {
       <p>
       ${
         actual.links
-          ? `<p class="strong"> Ferramentas:</p> 
+          ? `<p class="strong"> Tool Suggestion:</p> 
              <ul>
              ${templateListLink(actual.links)}
              </ul>
