@@ -13,7 +13,7 @@ const infosCards = [
       "Are the multiple stakeholders able to influence the system development process? How?",
       "Do you encourage or require that designers and users of AI-based systems consult relevant stakeholder groups while developing and managing the use of AI applications? Multistakeholder Collaboration.",
     ],
-    exposition:
+    practicalExample:
       "A company developing AI-based system should not ignore runtime stakeholders (as it is done in classical Requirements Engineering), that is, should not limit runtime stakeholders to just users of the system-to-be, but extend to other parties. For instance, runtime stakeholders of driverless cars go beyond passengers, but pedestrians, bystanders and others nearby drivers. This card is linked with card #9."
   },
   {
@@ -32,7 +32,7 @@ const infosCards = [
       "What do you have to explain to multiple stakeholders identified (in card #0)?",
       "Beyond multiple stakeholders indentified (in card #0), also contemplate lawyers and regulatory agencies.",
     ],
-    exposition: 
+    practicalExample: 
       "A company developing AI-based system must be clear about why the system has been implemented in a given context, and for what tasks, besides enabling oversight of their operations.",
   },
   {
@@ -51,7 +51,7 @@ const infosCards = [
       "Is the process of training and testing data well known and changable?",
       "Did you use third party componentes in your system? Are they well understood and documented?",
     ],
-    exposition:
+    practicalExample:
       "In a healthcare context, users would like to know why a decision was taken, what were the reasons behind the prescription of a medicine or the indication for surgery.",
   },
   {
@@ -72,7 +72,7 @@ const infosCards = [
       "Is user feedback being collected?",
       "Can you explain how user feedback is being used to refine the system?",
     ],
-    exposition:
+    practicalExample:
       "A company developing an AI-based system for human resources, during the recruitment process, if it is dealing with a candidate's personal information, would need the candidate's approval for data processing, and should also clearly state what data is being collected and why.",
   },
   {
@@ -88,7 +88,7 @@ const infosCards = [
       "What kind of trade-offs are emerging from the development of your system? Have you identified all possible trade-offs?",
       "Is the rationale of the prioritisation being documented?",
     ],
-    exposition:
+    practicalExample:
       "A company developing an AI-based system that is using personal data can improve the services offered to the public by adapting them based on personal or demographic characteristics, but compromise personal privacy due to high data demands.  Documenting trade-offs enhances relationship towards multiple stakeholders. Furthermore, a trade-off between accuracy and explainability may occur due to intrinsic features of deep learning.",
   },
   {
@@ -108,7 +108,7 @@ const infosCards = [
       "Did you document your system's decision making and actions?",
       "Are the decisions made by your AI system capable of being replicated by external auditors?",
     ],
-    exposition:
+    practicalExample:
       "A company developing an AI-based system should avoid ML subsystems as a black-box element, because it may be violating the traceability property of the system requirements. In addition, it should be able to intelligibly explain the incoming data, the outgoing data, what its algorithms do, their purpose, and which stakeholder originated them. Traceability and explainability can guarantee safety.",
   },
   {
@@ -129,7 +129,7 @@ const infosCards = [
       "Can you explain to external algorithmic auditing bodies the technical and ethical funcionalities of your AI?",
       "Can you assure system's reliability to multiple stakeholders? Can you reproduce failure scenarios, explain and repair them?",      
     ],
-    exposition:
+    practicalExample:
       "An AI-based system that assesses the potential risk of recidivism should have high reliability, while being able to explain its algorithm to society also at runtime, in addition to being able to be subject to an external audit, since its malfunctioning can cause great harm to society.",
   },
   {
@@ -146,7 +146,7 @@ const infosCards = [
       "Can you demonstrate what measures are being taken to ensure compliance to current legislations, such as GDPR?",
       "Is it clear for the end user that they are interacting with an AI system, rather than a human?",
     ],
-    exposition:
+    practicalExample:
       "A black-box element does not disclose anything about internal design. A company developing AI-based system should take into account using XAI tools - Explainable Artificial Intelligence - that produce more explainable models while maintaining high performance levels, or reconsider using black-box elements altogether.",
   },
   {
@@ -163,7 +163,7 @@ const infosCards = [
       "Did you align yout system with relevant standards (for example ISO, IEEE) or widely adopted protocols for daily data management and governance?",
       "Have you assessed whether there are any groups of people disproportionately affected by the negative impacts of the system at runtime?",
     ],
-    exposition:
+    practicalExample:
       "On any given issue, citizens will rarely all share the same values and perspectives. However, there is evidence that when groups are able to reflect on and articulate what they care about, it is possible to reduce conflict and reach compromise. AI tends to benefit those who are already technologically capable, resulting in increased inequality. The deployment of biased systems leads to the exacerbation of existing social injustices (e.g. systems advising on which prisoners get parole that use racially biased historical data and result in people of colour staying in prison longer).",
   },
   {
@@ -182,7 +182,7 @@ const infosCards = [
       "How are the multiple stakeholders informed about the development of the system?",
       "Are individuals provided with access to data that is being stored about them when requested, if so, can they be rectified or deleted?",
     ],
-    exposition:
+    practicalExample:
       "A company developing AI-based system should incorporate different views from multiple stakeholders, by either identifying the impacted stakeholders during the runtime of the system and including different people with different skills and backgrounds into the system development process, while keeping them informed about the ethical decision making process.",
   },
   {
@@ -200,7 +200,7 @@ const infosCards = [
       "Are there merchanisms to redress in a timely and appropriate manner harmful sitations?",
       "Are there detection mechanisms if something unexpected occurs? How does the system behave in this case, full stop, partial stop, or handle control to a human?",
     ],
-    exposition:
+    practicalExample:
       "AI should be programmed with a condition of reversibility, which ensures controllability and safety of the system: The ability to undo the last action or a sequence of actions allows users to undo undesired actions and get back to the ‘good’ stage of their work.",
   },
   {
@@ -217,7 +217,7 @@ const infosCards = [
       "Is the system evaluated for unexpected situations and behaviour?",
       "Are public safety risks that might arise from AI use assessed?",
     ],
-    exposition:
+    practicalExample:
       "AI-based systems, like any system, are vulnerable to attacks by malicious agents, and can also be used maliciously in various scenarios, such as automating social engineering attacks, state use of automated surveillance platforms to suppress dissent, fake news reports with realistically fabricated video and audio, automated influence campaigns, among many others. It is paramount to ensure security mechanisms so that your AI is not repurposed by attackers to cause harm to society.",
   },
   {
@@ -239,7 +239,7 @@ const infosCards = [
       "Did you take into account liability and consumer protection laws that apply to your system?",
       "How can the system be used to respect and improve the lives of citizens?",
     ],
-    exposition:
+    practicalExample:
       'The European Council stated that "Member states should provide individuals with the right not to be subject to a decision significantly affecting them that is based on automated decision-making without meaningful human intervention. At the very least, an individual should be able to obtain human intervention in such automated decision-making and have their views taken into consideration before such a decision is implemented".',
   },
   {
@@ -255,7 +255,7 @@ const infosCards = [
       "In the event of negative impact, can the ones affected seek redress?",
       "How do you inform users and other third parties about opportunities for redress?",
     ],
-    exposition:
+    practicalExample:
       "AI systems can inconvenience users in unforeseen, unpredictable ways. Depending on the situation, the company may or may not be legally responsible for the inconvenience. Nonetheless, by offering a digital platform for seeking redress, your company can seem more trustworthy while also offering additional value to your users.",
   },
   {
@@ -273,7 +273,7 @@ const infosCards = [
       "What mechanisms facilitate the system's auditability? How is traceability and logging of the systems's processess and outcomes ensured?",
       "How is adequate record-keeping, system for registration and documentation achieved?",
     ],
-    exposition:
+    practicalExample:
       "In facing negative outcomes from using AI, an accountability gap may impair the autonomy and violate the rights of the affected individuals. Accountability also requires that your project is auditable, that is, the project team keep records and make accessible information that enables monitoring of data provenance and analysis from the stages of collection, pre-processing, and modelling to training, testing, and deploying.",
   },
   {
@@ -294,7 +294,7 @@ const infosCards = [
       "Can your team report relevant issues (errors, security breaches, data leaks)? To whom?",
       "Is ethics training implemented in my organisation?",
     ],
-    exposition:
+    practicalExample:
       "In 2016, a beauty contest was judged by an AI, it selected nearly all white winners, with a lack of diversity. As they had used low quality data (lack of diversity) for data training, it favoured white participants.",
   },
   {
@@ -314,7 +314,7 @@ const infosCards = [
       "Are there mechanisms to provide de-identification, anomaly-detection, anonymization or encryption of personal data?",
       "Who makes the decisions regarding data use and collection? Do you have organizational policies for it?",
     ],
-    exposition:
+    practicalExample:
       "A cash-strapped public hospital gives a private company access to patient data (scans, behaviours, and medical history) in exchange for implementing a machine learning algorithm that vastly improves doctors’ ability to diagnose dangerous conditions quickly and safely. The algorithm will only be successful if the data is plentiful and transferable, which makes it hard to predict how the data will be used in advance, and hard to guarantee privacy and to ensure meaningful consent for patients.",
   },
   {
@@ -335,7 +335,7 @@ const infosCards = [
       "Is it offered to the data subjects a rectification option, where they can amend or modify information held by the data controller?",
       "Is it offered the right to erasure to users in accordance with Article 17 of the GDPR?",
     ],
-    exposition:
+    practicalExample:
       "More often data is becoming a valuable commodity, and giving access to third parties of personal data leads to misuse for profit. Data privacy should be carefully be taken into account. A shameful case is the Cambridge Analytic scandal, where data from users of Facebook was improperly obtained and used to influence the outcome of an election.",
   },
   {
@@ -351,7 +351,7 @@ const infosCards = [
       "Are there mechanisms to ensure that data retrieved is used for the benefit of users and society?",
       "Can you consider open sourcing your solutions to share the benefits of AI development to the greatest extent?",
     ],
-    exposition:
+    practicalExample:
       "Open sourcing algorithms to emphasize the value of the development of common algorithms and open research and collaboration to support the advancement of the technology. Also, AI systems can contribute to wellbeing by helping to increase citizen’s mental autonomy, with equal distribution of economic, social and political opportunity. As en example, it can be used to aid those working in the health care sector to provide better care and support the well-being of patients.",
   },
   {
@@ -367,7 +367,7 @@ const infosCards = [
       "What kind of systemic effects on society could the system have?",
       "Does your AI system have mechanisms to mitigate harms to ensure an overall common good for society? Evaluate benefits and harms resulting from AI.",
     ],
-    exposition:
+    practicalExample:
       "Image recognition techniques have clearly positive applications such as in the identification of malignant tumours, but can also be repurposed in ways that could be harmful, such as for mass surveillance, which can cause a huge societal distress and side effects, e.g., emigrations and imprisonment of political opponents.",
   },
   {
@@ -387,7 +387,7 @@ const infosCards = [
       "Is any of personal data being repurposed? Is it compatible with the original consent given by users?",
       "Are there mechanisms to ensure the protection to users' liberty? Liberty refers to rights such as freedom of speech, freedom of assembly and freedom of movement, as outlined in human rights legislation, e.g, EU's Charter of Fundamental Human Rights (2000) and the Universal Declaration of Human Rights (1948).",
     ],
-    exposition: 'A company that provides a recommendation system must not repurpose personal data provided by users to recommend ads which generates large amount of profit to the company, inducing users to buy certain products, reducing their freedom. According to the European Council: "Data processing in the context of AI systems shall be proportionate in relation to the legitimate purpose pursued through such processing, and should at all stages of the processing reflect a fair balance between the interests pursued through the development and deployment of the AI system and the rights and freedoms at stake."',
+    practicalExample: 'A company that provides a recommendation system must not repurpose personal data provided by users to recommend ads which generates large amount of profit to the company, inducing users to buy certain products, reducing their freedom. According to the European Council: "Data processing in the context of AI systems shall be proportionate in relation to the legitimate purpose pursued through such processing, and should at all stages of the processing reflect a fair balance between the interests pursued through the development and deployment of the AI system and the rights and freedoms at stake."',
   },
   {
     number: "21",
@@ -405,7 +405,7 @@ const infosCards = [
       "Is there a systematic approach to increase the system's accuracy?",
       "Have you assessed transparency, safety and accountability? Read the cards for: Transparency (#1), Safety (#11) and Accountability (#14).",
     ],
-    exposition: "A company that intends to trade globally must also adhere to regulations from other territories such as GDPR, this requires a multi-stakeholder approach to deal with compliance, and subsequent ethical issues related to trustworthiness like transparency, safety and accountability, through different angles and points of view.",
+    practicalExample: "A company that intends to trade globally must also adhere to regulations from other territories such as GDPR, this requires a multi-stakeholder approach to deal with compliance, and subsequent ethical issues related to trustworthiness like transparency, safety and accountability, through different angles and points of view.",
   },
   {
     number: "22",
@@ -422,7 +422,7 @@ const infosCards = [
       "Do you systematically evaluate energy efficiency towards a minimal ecological footprint?",
       "Did you assess alternatives to devices or service providers, preferring those that use renewable materials, promote resource efficiency and reduce waste?",
     ],
-    exposition: "High level of computing power comes at the expense of consuming large amounts of electric energy, and power-consuming entities are growing, e.g, high performance computing, large data centers. It is crucial to improve energy efficiency for devices using AI, reducing the energy required by the computing systems and resources needed to operate them. A company could sample all the components' power consumption at regular intervals serving as input data for energy-efficiency optimization, also storing device workload information and different usage metris. Consider using a cloud resource allocation technique that optimizes energy efficiency.
+    practicalExample: "High level of computing power comes at the expense of consuming large amounts of electric energy, and power-consuming entities are growing, e.g, high performance computing, large data centers. It is crucial to improve energy efficiency for devices using AI, reducing the energy required by the computing systems and resources needed to operate them. A company could sample all the components' power consumption at regular intervals serving as input data for energy-efficiency optimization, also storing device workload information and different usage metris. Consider using a cloud resource allocation technique that optimizes energy efficiency.
 ",
   },
   {
@@ -440,7 +440,7 @@ const infosCards = [
       "Did we implement mechanisms to ensure that our AI is not confused with human beings?",
       "Did we make clear to the user that they are interacting with AI and no another human being?",      
     ],
-    exposition: "Anxieties in humans who rely on technology have increased, and they may lose their creative, intellectual and emotional capacities. These capacities are essential to individuals’ ability to realise their life plans autonomously and thoughtfully. A company implementing AI should not enable human decline and obsolescence - and the associated fears of deskilling, atrophy, homogenisation, and loss of cultural diversity. These fears also arise in the displacement of human labour and employment by AI and robots because, beyond subsistence, work is a source of meaning and identity.",
+    practicalExample: "Anxieties in humans who rely on technology have increased, and they may lose their creative, intellectual and emotional capacities. These capacities are essential to individuals’ ability to realise their life plans autonomously and thoughtfully. A company implementing AI should not enable human decline and obsolescence - and the associated fears of deskilling, atrophy, homogenisation, and loss of cultural diversity. These fears also arise in the displacement of human labour and employment by AI and robots because, beyond subsistence, work is a source of meaning and identity.",
   },
   {
     number: "24",
@@ -458,7 +458,7 @@ const infosCards = [
       "In what contexts do our users or people affected by our system approve individualised information or options specifically tailored to a particular 'profile' that they fit into as beneficial to their lives? In what contexts is it harmful?",
       "How much should we restrict personalisation of advertising and public services for the sake of preserving ideals of citizenship and solidarity?",
     ],
-    exposition: "There is a growing concern with AI been used to disseminate fake news (using text fake news generator or deep fake for videos), as its potential to surveil and invade individuals’ privacy, therefor having the capacity to be used to undermine and jeopardise societal relationships and solidarity. A company developing AI-based system ought to consider if the AI supports rich and meaningful social interaction, both professionaly and in private life, and not support segregation and division, within the design and development process.",
+    practicalExample: "There is a growing concern with AI been used to disseminate fake news (using text fake news generator or deep fake for videos), as its potential to surveil and invade individuals’ privacy, therefor having the capacity to be used to undermine and jeopardise societal relationships and solidarity. A company developing AI-based system ought to consider if the AI supports rich and meaningful social interaction, both professionaly and in private life, and not support segregation and division, within the design and development process.",
   },
   {
     number: "25",
@@ -483,6 +483,6 @@ const infosCards = [
       "Did you document the system modifications?",
       "Is the documentation of the system, including its modifications and trade-offs (card #4), available to the stakeholders involved and the general public?",
     ],
-    exposition: "Periodic evaluations should be carried out in order to test the system in ethical terms, even after the deployment. A company developing AI-based systems should also recognise that positive and ethical characteristics are open to progressive increase, i.e. an algorithm may be increasingly fairer, and fairer than another algorithm or an earlier version, but it does not make sense to say that it is fair or unfair in absolute terms (compare this with the case of speed: it makes sense to say that an object moves fast, or that it is fast or faster than another, but not that it is fast in absolute terms).",
+    practicalExample: "Periodic evaluations should be carried out in order to test the system in ethical terms, even after the deployment. A company developing AI-based systems should also recognise that positive and ethical characteristics are open to progressive increase, i.e. an algorithm may be increasingly fairer, and fairer than another algorithm or an earlier version, but it does not make sense to say that it is fair or unfair in absolute terms (compare this with the case of speed: it makes sense to say that an object moves fast, or that it is fast or faster than another, but not that it is fast in absolute terms).",
   },
 ];
