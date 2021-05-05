@@ -114,7 +114,7 @@ const createCards = (infos) => {
     </div>
     <div class="card__body">
       <p>
-        <span class="strong">Motivation: </span>${actual.motivation}
+        <span class="strong">Preamble: </span>${actual.preamble}
       </p>
       <br>
       <ul>
