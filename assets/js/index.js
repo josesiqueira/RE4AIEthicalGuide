@@ -126,7 +126,7 @@ const createCards = (infos) => {
       <p>
         ${
           actual.praticalExample
-            ? `<span class="strong">Illustration:</span> ${actual.illustration} `
+            ? `<span class="strong">Exposition:</span> ${actual.exposition} `
             : ""
         }
       </p>
