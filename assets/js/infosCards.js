@@ -422,8 +422,7 @@ const infosCards = [
       "Do you systematically evaluate energy efficiency towards a minimal ecological footprint?",
       "Did you assess alternatives to devices or service providers, preferring those that use renewable materials, promote resource efficiency and reduce waste?",
     ],
-    practicalExample: "High level of computing power comes at the expense of consuming large amounts of electric energy, and power-consuming entities are growing, e.g, high performance computing, large data centers. It is crucial to improve energy efficiency for devices using AI, reducing the energy required by the computing systems and resources needed to operate them. A company could sample all the components' power consumption at regular intervals serving as input data for energy-efficiency optimization, also storing device workload information and different usage metris. Consider using a cloud resource allocation technique that optimizes energy efficiency.
-",
+    practicalExample: "High level of computing power comes at the expense of consuming large amounts of electric energy, and power-consuming entities are growing, e.g, high performance computing, large data centers. It is crucial to improve energy efficiency for devices using AI, reducing the energy required by the computing systems and resources needed to operate them. A company could sample all the components' power consumption at regular intervals serving as input data for energy-efficiency optimization, also storing device workload information and different usage metris. Consider using a cloud resource allocation technique that optimizes energy efficiency.",
   },
   {
     number: "23",
