@@ -1,10 +1,10 @@
 const infosCards = [
   {
     number: "0",
-    type: "Analyze",
-    title: "Stakeholder Analysis",
-    motivation:
-      " In order to understand the big picture, it is important to first understand who the system can affect and how. Try to also think past the obvious, direct stakeholders such as your end-users.",
+    type: "Assessment",
+    title: "Stakeholders' assessment",
+    preamble:
+      " Requirements elicitation is a complex process where software engineers work together with users in order to understand issues related to the application dominain, the services and features of the system that are desired by stakeholders, and necessary aspects such as performance, privacy, among others. In AI-based systems, it should be incorporated the perspectives of different stakeholders, especially those who may be impacted by the AI-based system developed, i.e., not only end-users are potential stakeholders, but also other people affected by the system in runtime, as members of the society.",
     whatToDo: [
       "Identify stakeholders.",
       "Who does the system affect and how? Stakeholders are not simply users, developers and customers.",
@@ -19,7 +19,7 @@ const infosCards = [
     number: "1",
     type: "Transparency",
     title: "Types of Transparency",
-    motivation:
+    preamble:
       "When considering transparency, it is important to understand who you are being transparent toward, and what you are being transparent about.",
     whatToDo: [
       "Consider the following...",
@@ -35,7 +35,7 @@ const infosCards = [
     number: "2",
     type: "Transparency",
     title: "Explainability",
-    motivation:
+    preamble:
       "If we cannot understand the reasons behind the actions of the AI, it is difficult to trust it.",
     whatToDo: [
       "Ask yourself:",
@@ -53,7 +53,7 @@ const infosCards = [
     number: "3",
     type: "Transparency",
     title: "Communication",
-    motivation:
+    preamble:
       "In practice, communication is a big part of being transparent with your stakeholders. Being transparent in communication can generate trust.",
     whatToDo: [
       "Ask yourself:",
@@ -70,7 +70,7 @@ const infosCards = [
     number: "4",
     type: "Transparency",
     title: "Documenting Trade-offs",
-    motivation:
+    preamble:
       "One important part of transparent system development is the documentation of trade-offs. Whenever you make a decision, you choose one option over other alternatives. However, documenting why and what the alternatives were important.",
     whatToDo: [
       "Ask yourself:",
@@ -84,7 +84,7 @@ const infosCards = [
     number: "5",
     type: "Transparency",
     title: "Traceability",
-    motivation:
+    preamble:
       "Traceability supports explainability. It helps us understand why the AI acts the way it does.",
     whatToDo: [
       "Document different types of documentation (code, project etc.) are typically key in producing transparency.",
@@ -99,7 +99,7 @@ const infosCards = [
     number: "6",
     type: "Transparency",
     title: "System Reliability",
-    motivation:
+    preamble:
       "Transparency makes ethical development possible in the first place. To make it ethical, we must understand how the system works and why it makes certain decisions.",
     whatToDo: [
       "Ask yourself:",
@@ -115,7 +115,7 @@ const infosCards = [
     number: "7",
     type: "Data",
     title: "Privacy and Data",
-    motivation:
+    preamble:
       " Privacy is a rising trend in the wake of various recent data missue reveals. People are now increasingly conscious about handing out personal data. Similarly, regulations such as GDPR now affect data collection.",
     whatToDo: [
       "Ask yourself:",
@@ -132,7 +132,7 @@ const infosCards = [
     number: "8",
     type: "Data",
     title: "Data Quality",
-    motivation:
+    preamble:
       "As AI are trained using data, the data used directly affects how the system operates. Both the nature and the quality and integrity of the data used has to align with goals of the system.",
     whatToDo: [
       "Ask yourself:",
@@ -149,7 +149,7 @@ const infosCards = [
     number: "9",
     type: "Data",
     title: "Access to Data",
-    motivation:
+    preamble:
       "Aside from carefully planning what data you colect and how it is also important to plan how it can or will be used and by whom.",
     whatToDo: [
       "Ask yourself:",
@@ -166,7 +166,7 @@ const infosCards = [
     number: "10",
     type: "Agency & Oversight",
     title: "Human Agency",
-    motivation:
+    preamble:
       "People interacting with the system or using it shoud be able to undersand it sufficiently. Users should be able to make informed decisions based on its suggestions, or to challenge its suggestions. AI systems should let humans make independent choices.",
     whatToDo: [
       "Does the system interact with decisions by human actors, i.e. end users (e.g. recommending users actions or decisions, or presenting options)?",
@@ -181,7 +181,7 @@ const infosCards = [
     number: "11",
     type: "Agency & Oversight",
     title: "Human Oversight",
-    motivation:
+    preamble:
       "AI systems shoud support human decision-making. They shoud not undermine human autonomy by making decisions for us, meaning they shoud be subject to human oversight.",
     whatToDo: [
       "Ask yourself:",
@@ -196,7 +196,7 @@ const infosCards = [
     number: "12",
     type: "Safety & Security",
     title: "System Security",
-    motivation:
+    preamble:
       "While cybersecurity is important in any system, AI systems present new challenges. Cyber-physical systems can even cause fatalities in the hands of malicious actors.",
     whatToDo: [
       "Ask yourself:",
@@ -212,7 +212,7 @@ const infosCards = [
     number: "13",
     type: "Safety & Security",
     title: "System Safety",
-    motivation:
+    preamble:
       "AI systems exert notable influence on the physical world whether they are cyber-physical or not. Various risks and their consequences should be considered, thinking ahead to the operational life of the system.",
     whatToDo: [
       "Ask yourself:",
@@ -229,7 +229,7 @@ const infosCards = [
     number: "14",
     type: "Fairness",
     title: "Accessbility",
-    motivation:
+    preamble:
       "Technology can be discriminatin in various ways. Given the enormous impact AI systems can have, ensuring equal access to their positive impacts is ethically important.",
     whatToDo: [
       "Ask yourself:",
@@ -247,7 +247,7 @@ const infosCards = [
     number: "15",
     type: "Fairness",
     title: "Stakeholder Participation",
-    motivation:
+    preamble:
       "As AI systems have notable impacts, they stakeholders are also numerous. Though the system affects these various holders in various ways, they are often not involved in the development. Yet, e.g. when using a decision-making system, its users have to trust the system while also being critical of it.",
     whatToDo: [
       "Turn to your stakeholder analysis (card #0):",
@@ -262,7 +262,7 @@ const infosCards = [
     number: "16",
     type: "Wellbeing",
     title: "Environmental Impacts",
-    motivation:
+    preamble:
       "Past the general wellbeing implications, ecological consciousness is a current trend. Being ecological can be a selling point for your organization.",
     whatToDo: [
       "Ask yourself:",
@@ -277,7 +277,7 @@ const infosCards = [
     number: "17",
     type: "Wellbeing",
     title: "Societal Effects",
-    motivation:
+    preamble:
       "The impacts a system has go beyond its userbase. A system may well affect negatively even those who do net use it nor wish to use it.",
     whatToDo: [
       "Ask yourself:",
@@ -292,7 +292,7 @@ const infosCards = [
     number: "18",
     type: "Accountability",
     title: "Auditability",
-    motivation:
+    preamble:
       "Regulations affecting AI and data may necessitate audits of systems in the future. Similarly, if the system causes damage, an audit might be requested. It is good to have mechanisms in place beforehand.",
     whatToDo: [
       "Ask yourself:",
@@ -308,7 +308,7 @@ const infosCards = [
     number: "19",
     type: "Accountability",
     title: "Ability to Redress",
-    motivation:
+    preamble:
       "Making sure people know they can be compensated in some way in the event something goes wrong with the system is important in generating trust. Such scenarios should be planned in advance to what extent possible.",
     whatToDo: [
       "Ask yourself:",
@@ -323,7 +323,7 @@ const infosCards = [
     number: "20",
     type: "Accountability",
     title: "Minimizing Negative Impacts",
-    motivation:
+    preamble:
       "Minimizing negative impacts of the system is financially important for any developer organization. Incidents are often costly.",
     whatToDo: [
       "First, consider:",
