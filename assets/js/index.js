@@ -125,8 +125,8 @@ const createCards = (infos) => {
       <br>
       <p>
         ${
-          actual.exposition
-            ? `<span class="strong">Exposition:</span> ${actual.exposition} `
+          actual.practicalExample
+            ? `<span class="strong">Exposition:</span> ${actual.practicalExample} `
             : ""
         }
       </p>
