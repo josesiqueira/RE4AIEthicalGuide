@@ -118,15 +118,15 @@ const createCards = (infos) => {
       </p>
       <br>
       <ul>
-        <span class="strong">What to Do:</span> 
+        <span class="strong">Issues to be addressed:</span> 
         <br>
-        ${templateList(actual.whatToDo)}
+        ${templateList(actual.issues)}
       </ul>
       <br>
       <p>
         ${
           actual.praticalExample
-            ? `<span class="strong"> Practical Example:</span> ${actual.praticalExample} `
+            ? `<span class="strong">Illustration:</span> ${actual.illustration} `
             : ""
         }
       </p>
