@@ -151,7 +151,7 @@ const infosCards = [
   },
   {
     number: "8",
-    type: "Transparency",
+    type: "Justice and fairness",
     title: "Inclusion, Equality, Equity, Non-bias, Fairness, Consistency",
     preamble:
       "Disruptive technology can also lead to discrimination in a number of ways. It is essential to provide equal access to the benefits of AI as they play a huge role in today's society.",
