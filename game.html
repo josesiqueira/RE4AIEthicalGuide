@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Play</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/game.css" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- Nav -->
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <img class="logo" src="./assets/img/logo.png" alt="" srcset=""
+        /></a>
+        <ul class="menu">
+          <li class="menu__item"><a href="index.html">Introduction</a></li>
+          <li class="menu__item"><a href="game.html">Guide</a></li>
+          <li class="menu__item"><a href="principles.html">Principles</a></li>
+          <li class="menu__item"><a href="tools.html">Tools</a></li>
+          <li class="menu__item"><a href="tradeoffs.html">Trade-offs</a></li>
+          <li class="menu__item"><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Cards -->
+    <main>
+      <div class="container__game container">
+        <h1 id="game__title">Select multiple cards</h1>
+      </div>
+      <section class="container__options container">
+        <div class="container__filters">
+          <label for="filterCards" class="filter__paragraph">Filters:</label>
+          <select name="filterCards" id="filterCards">
+            <option value="all">All</option>
+            <option value="Transparency">Transparency</option>
+            <option value="Justice and fairness">Justice and fairness</option>
+            <option value="Non-maleficence">Non-maleficence</option>
+            <option value="Responsibility">Responsibility</option>
+            <option value="Privacy">Privacy</option>
+            <option value="Beneficence">Beneficence</option>
+            <option value="Freedom and Autonomy">Freedom and autonomy</option>
+            <option value="Trust">Trust</option>
+            <option value="Sustainability">Sustainability</option>
+            <option value="Dignity">Dignity</option>
+            <option value="Solidarity">Solidarity</option>
+            <option value="Assessment">Assessment</option>
+          </select>
+        </div>
+        <div>
+          <button id="result" class="btn__compare">Compare cards</button>
+          <button id="start" class="btn__start">Start again</button>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="container__alert">
+          <!-- Alert when user does not select at least two cards -->
+          <p class="alert">Select at least two cards</p>
+        </div>
+        <!-- Where cards are created -->
+        <div class="cards"></div>
+      </section>
+    </main>
+    <!-- Seção Footer -->
+    <footer class="footer">
+      <p>
+        <a href="http://creativecommons.org/licenses/by/4.0/" rel="license"
+          ><img
+            style="border-width: 0"
+            src="https://i.creativecommons.org/l/by/4.0/80x15.png"
+            alt="Creative Commons License"
+          /><br /> </a
+        ><br />
+        Unless otherwise stated, the contents are licensed under
+        <a href="http://creativecommons.org/licenses/by/4.0/" rel="license"
+          >Creative Commons Attribution 4.0 &#8211; International</a
+        >. The authors are responsible for the choice and presentation of their
+        texts on this site and for the opinions expressed.
+        <a
+          class="link"
+          href="https://github.com/josesiqueira/RE4AIEthicalGuide/"
+          >Source</a
+        >.
+      </p>
+    </footer>
+    <script src="./assets/js/infosCards.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
