@@ -290,7 +290,7 @@ const infosCards = [
       "Did you consider usability by people with special needs, disabilities, or marginalised groups?",
       "Did you assess and mitigated possible biases in the data set?",
       "Did you create a discrimination impact assessments to identify issues before your AI is in use?",
-      "Did you align yout system with relevant standards (for example ISO, IEEE) or widely adopted protocols for daily data management and governance?",
+      "Did you align your system with relevant standards (for example ISO, IEEE) or widely adopted protocols for daily data management and governance?",
       "Have you assessed whether there are any groups of people disproportionately affected by the negative impacts of the system at runtime?",
     ],
     practicalExample:
